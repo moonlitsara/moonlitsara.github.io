@@ -1,0 +1,58 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="gayfro.gs" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Start</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	@import url(../components/start/UbuntuMono.css);
+	@import url(../components/start/Theme.css);
+	html {
+		font-family: UbuntuMono, sans-serif;
+		background: var(--main-bg);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+	p > emphasis {
+		color: #F95CB3;
+		font-weight: bold;
+	}
+	p > quiet {
+		color: #f3f3f3;
+		font-style: italic;
+		font-size: 80%;
+	}
+	a {
+		color: #f581f5;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+</style>
