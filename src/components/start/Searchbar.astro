@@ -24,43 +24,109 @@ import type { getAbsoluteLocaleUrl } from "astro:i18n";
 		[key: string]: any
 	}
 	const searchDictionary:StringIndex = {
-		r: 'https://reddit.com/search/?q=',
-		reddit: 'https://reddit.com/search/?q=',
-		
-		genshin: 'https://genshin-impact.fandom.com/wiki/Special:Search?query=',
+		<!-- A -->
+		a: 'https://wiki.archlinux.org/index.php?search=',
 
-		w: 'https://en.wikipedia.org/w/index.php?search=',
-		wp: 'https://en.wikipedia.org/w/index.php?search=',
-		wiki: 'https://en.wikipedia.org/w/index.php?search=',
-		wikipedia: 'https://en.wikipedia.org/w/index.php?search=',
+		arch: 'https://wiki.archlinux.org/index.php?search=',
+		archlinux: 'https://wiki.archlinux.org/index.php?search=',
+		archwiki: 'https://wiki.archlinux.org/index.php?search=',
 
-		yt: 'https://youtube.com/results?search_query=',
-		youtube: 'https://youtube.com/results?search_query=',
+		aur: 'https://aur.archlinux.org/packages?O=0&K=',
 
-		mozilla: 'https://developer.mozilla.org/en-US/search?q=',
+
+		<!-- B -->
+		b: 'https://bsky.app/search?q=',
 
 		bsky: 'https://bsky.app/search?q=',
 		bluesky: 'https://bsky.app/search?q=',
+		bing: 'https://www.bing.com/search?q=',
 
-		steam: 'https://store.steampowered.com/search/?term=',
+
+		<!-- D -->
+		d: 'https://duckduckgo.com/?t=ffab&q=',
 
 		ddg: 'https://duckduckgo.com/?t=ffab&q=',
 		duckduckgo: 'https://duckduckgo.com/?t=ffab&q=',
 
+
+		<!-- G -->
 		g: 'https://www.google.com/search?q=',
+
 		google: 'https://www.google.com/search?q=',
 
+		gi: 'https://genshin-impact.fandom.com/wiki/Special:Search?query=',
+		genshin: 'https://genshin-impact.fandom.com/wiki/Special:Search?query=',
+
+
+		<!-- H -->
+		h: 'https://honkai-star-rail.fandom.com/wiki/Special:Search?query=',
+
+		hsr: 'https://honkai-star-rail.fandom.com/wiki/Special:Search?query=',
+		honkai: 'https://honkai-star-rail.fandom.com/wiki/Special:Search?query=',
+		honkaistarrail: 'https://honkai-star-rail.fandom.com/wiki/Special:Search?query=',
+
+
+		<!-- M -->
+		m: 'https://developer.mozilla.org/en-US/search?q=',
+		mozilla: 'https://developer.mozilla.org/en-US/search?q=',
+
+		<!-- Q -->
 		q: 'https://www.qwant.com/?q=',
+
 		qwant: 'https://www.qwant.com/?q=',
 
+
+		<!-- R -->
+		r: 'https://reddit.com/search/?q=',
+
+		red: 'https://reddit.com/search/?q=',
+		reddit: 'https://reddit.com/search/?q=',
+
+		rst: 'https://doc.rust-lang.org/stable/reference/?search=',
+		rust: 'https://doc.rust-lang.org/stable/reference/?search=',
+
+
+		<!-- S -->
 		s: 'https://www.startpage.com/sp/search?query=',
+
 		sp: 'https://www.startpage.com/sp/search?query=',
 		stp: 'https://www.startpage.com/sp/search?query=',
 		start: 'https://www.startpage.com/sp/search?query=',
 		startpage: 'https://www.startpage.com/sp/search?query=',
 
-		b: 'https://www.bing.com/search?q=',
-		bing: 'https://www.bing.com/search?q=',
+		starrail: 'https://honkai-star-rail.fandom.com/wiki/Special:Search?query=',
+
+		steam: 'https://store.steampowered.com/search/?term=',
+
+
+		<!-- W -->
+		w: 'https://en.wikipedia.org/w/index.php?search=',
+
+		wp: 'https://en.wikipedia.org/w/index.php?search=',
+		wiki: 'https://en.wikipedia.org/w/index.php?search=',
+		wikipedia: 'https://en.wikipedia.org/w/index.php?search=',
+
+		wuwa: 'https://wutheringwaves.fandom.com/wiki/Special:Search?query=',
+		wuther: 'https://wutheringwaves.fandom.com/wiki/Special:Search?query=',
+		wuthering: 'https://wutheringwaves.fandom.com/wiki/Special:Search?query=',
+		wutheringwaves: 'https://wutheringwaves.fandom.com/wiki/Special:Search?query=',
+
+
+		<!-- Y -->
+		y: 'https://youtube.com/results?search_query=',
+		yt: 'https://youtube.com/results?search_query=',
+		youtube: 'https://youtube.com/results?search_query=',
+
+
+		<!-- Z -->
+		z: 'https://zenless-zone-zero.fandom.com/wiki/Special:Search?query=',
+
+		zzz: 'https://zenless-zone-zero.fandom.com/wiki/Special:Search?query=',
+		zen: 'https://zenless-zone-zero.fandom.com/wiki/Special:Search?query=',
+		zenless: 'https://zenless-zone-zero.fandom.com/wiki/Special:Search?query=',
+		zonezero: 'https://zenless-zone-zero.fandom.com/wiki/Special:Search?query=',
+		zenlesszero: 'https://zenless-zone-zero.fandom.com/wiki/Special:Search?query=',
+		zenlesszonezero: 'https://zenless-zone-zero.fandom.com/wiki/Special:Search?query=',
 	};
 
 	const search = (document.getElementById("search")! as HTMLInputElement)
