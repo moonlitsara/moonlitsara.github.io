@@ -54,7 +54,6 @@ import type { getAbsoluteLocaleUrl } from "astro:i18n";
 /* Letter: G */
 		g: 'https://www.google.com/search?q=',
 
-
 		google: 'https://www.google.com/search?q=',
 
 		gi: 'https://genshin-impact.fandom.com/wiki/Special:Search?query=',
@@ -78,7 +77,6 @@ import type { getAbsoluteLocaleUrl } from "astro:i18n";
 /* Letter: Q */
 		q: 'https://www.qwant.com/?q=',
 
-
 		qwant: 'https://www.qwant.com/?q=',
 
 		
@@ -94,7 +92,6 @@ import type { getAbsoluteLocaleUrl } from "astro:i18n";
 
 /* Letter: S */
 		s: 'https://www.startpage.com/sp/search?query=',
-
 
 		sp: 'https://www.startpage.com/sp/search?query=',
 		stp: 'https://www.startpage.com/sp/search?query=',
@@ -191,14 +188,14 @@ import type { getAbsoluteLocaleUrl } from "astro:i18n";
 				let sub = query.substring(2);
 				return (new URL("https://reddit.com/r/" + sub)).href;
 			}
-			let sub = query.substring(2,separator);
-			query = query.substring(separator+1);
+			let sub = query.substring(2, separator);
+			query = query.substring(separator + 1);
 			try {
 				while (query.substring(0,1) == " ") {
 					query = query.substring(1);
 				};
 			} catch {console.log("how did u fuck up removing whitespace?????? D:")}
-			if (value != "" && value != " " && value != "  ") {  // WORST LINE OF CODE I HAVE EVER WRITTEN. which is saying something bcos this whole thing is baaaaaddd
+			if (query != "") {
 				return (new URL("https://reddit.com/r/" + sub + "/search/?q=" + query)).href;
 			}
 			return (new URL("https://reddit.com/r/" + sub)).href;
