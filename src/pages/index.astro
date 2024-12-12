@@ -1,69 +1,15 @@
 ---
 import Layout from '../layouts/StartPage.astro';
 import Welcomer from '../components/start/Welcomer.astro';
-import Searchbar from '../components/start/Searchbar.astro';
-import CardSet from '../components/start/CardSet.astro';
-import BookmarkCard from '../components/start/BookmarkCard.astro';
 ---
 
 <Layout title="sara's place">
 	<main>
-		<Welcomer msg="hello, world_" />
-		<Searchbar />
-		<div class="CardSet">
-			<BookmarkCard title="home"
-				l1 = "https://moonlit.gay/" t1 = "moonlit"
-				l2 = "https://proton.me/" t2 = "proton"
-				l3 = "https://mail.google.com/" t3 = "gmail"
-				l4 = "" t4 = ""
-				l5 = "" t5 = ""
-				l6 = "" t6 = ""
-				l7 = "" t7 = ""
-				l8 = "" t8 = ""
-			/>
-			<BookmarkCard title="code"
-				l1 = "https://github.com/" t1 = "github"
-				l2= "https://developer.mozilla.org/en-US/" t2 = "mozilla"
-				l3 = "https://wiki.archlinux.org/" t3 = "archwiki"
-				l4 = "https://stackoverflow.com/" t4 = "stack"
-				l5 = "" t5 = ""
-				l6 = "" t6 = ""
-				l7 = "" t7 = ""
-				l8 = "" t8 = ""
-			/>
-			<BookmarkCard title="social"
-				l1 = "https://discord.com/" t1 = "discord"
-				l2 = "https://bsky.app/" t2 = "bluesky"
-				l3 = "https://tumblr.com/" t3 = "tumblr"
-				l4 = "https://reddit.com/" t4 = "reddit"
-				l5 = "" t5 = ""
-				l6 = "" t6 = ""
-				l7 = "" t7 = ""
-				l8 = "" t8 = ""
-			/>
-			<BookmarkCard title="gaming"
-				l1 = "https://store.steampowered.com/" t1 = "steam"
-				l2 = "https://hoyolab.com/home/" t2 = "hoyolab"
-				l3 = "https://eu.finalfantasyxiv.com/lodestone/" t3 = "lodestone"
-				l4 = "" t4 = ""
-				l5 = "" t5 = ""
-				l6 = "" t6 = ""
-				l7 = "" t7 = ""
-				l8 = "" t8 = ""
-			/>
-		</div>
+		<Welcomer msg="sara's place" />
 	</main>
 </Layout>
 
 <style>
-	.CardSet {
-		list-style: none;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		width: 100%;
-		height: auto;
-	}
 	main {
 		width: 100%;
 		height: 100%;
